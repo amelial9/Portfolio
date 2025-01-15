@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
+
 
 /* Header Styling */
 header {
@@ -51,16 +53,21 @@ header nav ul li a:hover {
     color: #e0e0e0;
 }
 
+
 /* Main Content Styling */
 main.split-page {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin-top: 80px; /* Offset for header */
+    height: 90vh;
+    margin-top: 80px;
     padding: 20px;
 }
 
+main div p.name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 /* Left Section */
 .sec1 {
@@ -68,19 +75,30 @@ main.split-page {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    transform: translateX(50px);
 }
 
 .sec1 img {
-    width: 250px; /* Set a specific width */
-    height: 250px; /* Set a specific height */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+.sec1 p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
 
 /* Right Section */
 .sec2 {
     flex: 1;
     padding: 70px;
+    transform: translateX(-60px);
 }
 
 .sec2 h1 {
@@ -94,37 +112,29 @@ main.split-page {
     line-height: 1.6;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+.sec2 .subsec {
+    display: flex;
+    flex-direction: row;
 }
 
-.cta-button:hover {
-    background-color: #005fa3;
+div.subsec {
+    align-items: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main.split-page {
-        flex-direction: column;
-        text-align: center;
-    }
+.interests {
+    font-size: 1.1em;
+    font-weight: bold;
+}
 
-    .sec2 h1 {
-        font-size: 2.5em;
-    }
+.education {
+    font-size: 1.1em;
+    font-weight: bold;
+}
 
-    .sec2 p {
-        font-size: 1em;
-    }
+.subsec ul {
+    margin-left: 20px;
+}
 
-    .sec1 img {
-        width: 80%;
-    }
+.subsec p {
+    font-size: 1.1em;
 }
