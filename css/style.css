@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Main Content Styling */
+main.split-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 80px; /* Offset for header */
+    padding: 20px;
+}
+
+
+/* Left Section */
+.sec1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 img {
+    width: 250px; /* Set a specific width */
+    height: 250px; /* Set a specific height */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Right Section */
+.sec2 {
+    flex: 1;
+    padding: 70px;
+}
+
+.sec2 h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.sec2 p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main.split-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec2 h1 {
+        font-size: 2.5em;
+    }
+
+    .sec2 p {
+        font-size: 1em;
+    }
+
+    .sec1 img {
+        width: 80%;
+    }
+}
