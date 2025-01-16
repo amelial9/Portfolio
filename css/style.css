@@ -60,6 +60,13 @@ header {
     height: 55px;
 }
 
+/* responsive */
+@media (max-width: 1000px) {
+    .navbar .notion {
+        display: none;
+    }
+}
+
 
 /* Main Content Styling */
 main.split-page {
@@ -73,6 +80,16 @@ main div p.name {
     font-weight: bold;
 }
 
+/* responsive */
+@media (max-width: 1000px) {
+    main.split-page {
+        display: block;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
 
 /* Left Section */
 .sec1 {
@@ -131,8 +148,10 @@ main div p.name {
     margin-left: 20px;
 }
 
-/* .sec2 p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    line-height: 1.6;
-} */
+.sec2 a {
+    color: black;
+}
+
+.sec2 a:hover {
+    color: #f2c3b9;;
+}
