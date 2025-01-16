@@ -59,3 +59,10 @@ header {
     width: 55px;
     height: 55px;
 }
+
+/* responsive */
+@media (max-width: 1000px) {
+    .navbar .notion {
+        display: none;
+    }
+}
