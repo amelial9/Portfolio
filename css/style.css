@@ -80,16 +80,6 @@ main div p.name {
     font-weight: bold;
 }
 
-/* responsive */
-@media (max-width: 1000px) {
-    main.split-page {
-        display: block;
-        align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-}
 
 /* Left Section */
 .sec1 {
