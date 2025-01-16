@@ -1,19 +1,7 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
 
 /* Header Styling */
 header {
@@ -21,19 +9,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+
 }
 
 header .logo a {
     text-decoration: none;
-    color: white;
     font-size: 1.5em;
     font-weight: bold;
+    color:black;
 }
 
 header nav ul {
@@ -44,9 +27,8 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1em;
-    transition: color 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
@@ -54,14 +36,20 @@ header nav ul li a:hover {
 }
 
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    /* color: #333; */
+}
+
+
 /* Main Content Styling */
 main.split-page {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 90vh;
-    margin-top: 80px;
-    padding: 20px;
+    margin-top: 40px;
 }
 
 main div p.name {
@@ -73,7 +61,6 @@ main div p.name {
 .sec1 {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     transform: translateX(50px);
@@ -106,27 +93,15 @@ main div p.name {
     margin-bottom: 20px;
 }
 
-.sec2 p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
 .sec2 .subsec {
     display: flex;
-    flex-direction: row;
 }
 
-div.subsec {
-    align-items: center;
+.sub {
+    flex:1;
 }
 
-.interests {
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.education {
+.descipTitle {
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -135,6 +110,9 @@ div.subsec {
     margin-left: 20px;
 }
 
-.subsec p {
-    font-size: 1.1em;
-}
+
+/* .sec2 p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+} */
