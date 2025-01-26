@@ -1,11 +1,87 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+html,body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.5;
+    height: 100vh;
 }
+
+nav {
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: relative;
+    height: 70px;
+}
+
+.logo {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menuList {
+    background-color: white;
+}
+
+.menu-icon img{
+    width: 55px;
+    height: 55px;
+}
+
+@media (max-width:700px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        padding: 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        transition: all 0.5s;
+    }
+    
+}
+
+
+/* sec1 */
 
 .sec1 {
     display: flex;
@@ -13,56 +89,65 @@ body {
     align-items: center;
 }
 
-.notion {
-    width: 55px;
-    height: 55px;
-}
-
 .profilepic {
-    width: 25em;
-    height: 25em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
     object-fit: cover;
 }
 
 main div p.name {
-    font-size: 2.7em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 main div p {
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .iconlinks {
-    width: 4.5em;
-    height: 4.5em;
+    width: 2.75em;
+    height:2.75em;
 }
+
+/* sec2 */
 
 .sec2 h1,
 .sec2 p {
-    margin-left: 9rem;
-    margin-right: 9rem;
+    margin-left: 5rem;
+    margin-right: 5rem
 }
 
-
-.sub1 ul{
-    margin-left: 9rem;
+.sec2 p {
+    font-size: 0.9em;
 }
 
 .subsec {
     display: flex;
     flex-direction: row;
-    align-items: left;
 }
 
-.sub1 ul {
-    font-size: 1.7em;
+.subsec .descipTitle {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.sub1 {
+    flex: 1;
 }
 
 .sub2 {
-    margin-left: 0rem;
-    /* margin-right: 9rem; */
+    flex: 1;
+}
+
+.sub1 ul{
+    margin-left: 6rem;
+    font-size: 0.9em;
+}
+
+.sub2 p{
+    margin-left: 2rem;
+    font-size: 0.9em;
 }
 
 .sec2 a {
@@ -71,4 +156,45 @@ main div p {
 
 a:hover {
     color: #f2c3b9;
+}
+
+
+@media (min-width: 700px) {
+    main.split-page {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .sec1 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .sec2 {
+        flex: 1.5;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .sec2 h1 {
+        margin-left: 0;
+    }
+
+    .sec2 p {
+        margin-left: 0;
+        margin-right: 5rem;
+    }
+
+    .subsec {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .sub1 ul {
+        margin-left: 1rem;
+    }
+
 }

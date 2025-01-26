@@ -6,39 +6,50 @@
     <meta name="description" content="Amelia Li's Portfolio">
     <title>Amelia Li</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="img/notion.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="https://www.ameliali.com/">Amelia Li</a>
-            </div>
-
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-
-            <!-- <ul class="links">
-                <li><a href="https://www.ameliali.com/">Home</a></li>
-                <li><a href="https://www.ameliali.com/experience">Experience</a></li>
-                <li><a href="https://www.ameliali.com/projects">Projects</a></li>
-                <li><a href="https://www.ameliali.com/about">About</a></li>
-            </ul> -->
-
-            <div class="personToggle">
-                <img src="img/notion.png" alt="notion portrait link" class="notion">
-            </div>
-            
+    <nav>
+        <div class="logo">
+            <h1>Amelia Li</h1>
         </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <!-- <ul id="menuList">
+            <li><a href="https://www.ameliali.com/">Home</a></li>
+            <li><a href="https://www.ameliali.com/experience">Experience</a></li>
+            <li><a href="https://www.ameliali.com/projects">Projects</a></li>
+            <li><a href="https://www.ameliali.com/about">About</a></li>
+        </ul> -->
+
+
+        <div class="menu-icon">
+            <img src="img/notion.png" alt="menu" onclick="toggleMenu()">
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
         
-    </header>
+    </script>
+
 
     <main class="split-page">
         <div class="sec1">
@@ -65,8 +76,9 @@
 
         <div class="sec2">
             <h1>Hi! I'm Amelia 👋</h1>
-            <p>
-                I'm an <a href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank">Informatics</a> student at the University of Washington <a href="https://ischool.uw.edu/about" target="_blank">iSchool</a> passionate about turning my codes into meaningful solutions. I am committed to bringing hands-on coding and development experience with multiple programming languages. Dive into my website to explore my work!
+            <br>
+            <p class="intro">
+                I'm a second-year <a href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank">Informatics</a> student at the University of Washington <a href="https://ischool.uw.edu/about" target="_blank">iSchool</a> passionate about turning my codes into meaningful solutions. I am committed to bringing high-quality development solutions from my experience in multiple programming tools, projects and with diverse teams. At the same time, I'm deeply invested in conducting research centering in the intersection of algorithms, machine learning, and data-driven insights to uncover pattern in complex datasets. Dive into my website to explore my work!
             </p>
             
             <br>
