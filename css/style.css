@@ -119,7 +119,7 @@ main div p {
 }
 
 .sec2 p {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .subsec {
@@ -142,12 +142,12 @@ main div p {
 
 .sub1 ul{
     margin-left: 6rem;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .sub2 p{
-    margin-left: 2rem;
-    font-size: 0.9em;
+    margin-left: 1rem;
+    font-size: 1em;
 }
 
 .sec2 a {
@@ -170,6 +170,7 @@ a:hover {
     .sec1 {
         flex: 1;
         text-align: center;
+        margin-left: 1rem;
     }
 
     .sec2 {
