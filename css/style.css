@@ -99,7 +99,7 @@ nav ul li a {
     }
 
     .sec2 {
-        flex: 1.5;
+        flex: 1.75;
         text-align: left;
         margin-left: 2rem;
     }
@@ -122,8 +122,6 @@ nav ul li a {
     .sub1 ul {
         margin-left: 1rem;
     }
-
-    /* experience */
 
 }
 
