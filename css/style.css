@@ -8,7 +8,7 @@
 html,body {
     height: 100%;
     width: 100%;
-    background-color: #F3F2EA;
+    background-color: white;
 }
 
 body {
@@ -21,7 +21,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #F3F2EA;
     position: relative;
     height: 70px;
     background: transparent;
@@ -53,7 +52,7 @@ nav ul li a {
 }
 
 #menuList {
-    background-color: #F3F2EA;
+    background-color: white;
 }
 
 .menu-icon img{
