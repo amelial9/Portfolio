@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;   
+    font-family: Arial !important;   
 }
 
 html,body {
@@ -60,7 +60,7 @@ nav ul li a {
     height: 55px;
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
     nav ul {
         position: absolute;
         top: 70px;
@@ -83,7 +83,7 @@ nav ul li a {
     
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     main.split-page {
         display: flex;
         flex-direction: row;
@@ -120,6 +120,28 @@ nav ul li a {
 
     .sub1 ul {
         margin-left: 1rem;
+    }
+
+    /* experiences */
+
+    .experiences {
+        margin-left: 17rem !important;
+        margin-right: 17rem !important;
+    }
+
+    .line1 img {
+        height: 265px !important;
+        width: 2px !important;
+    }
+
+    .line2 img {
+        height: 215px !important;
+        width: 2px !important;
+    }
+
+    .line3 img {
+        height: 235px !important;
+        width: 2px !important;
     }
 
 }
@@ -203,3 +225,60 @@ a:hover {
 }
 
 
+/* experiences */
+
+.experiences h2 {
+    align-self: flex-start;
+    width: 100%;
+    text-align: left;
+}
+
+.experiences {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.experienceContent ul {
+    margin-left: 2rem;
+}
+
+.experienceicon img {
+    width: 2.2em;
+    height:2.2em;
+}
+
+.line1,
+.line2,
+.line3 {
+    padding-left: 16px;
+}
+
+.line1 img {
+    height: 525px;
+    width: 2px;
+}
+
+.line2 img {
+    height: 435px;
+    width: 2px;
+}
+
+.line3 img {
+    height: 375px;
+    width: 2px;
+}
