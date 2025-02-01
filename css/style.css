@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 #menuList {
-    background-color: white;
+    background-color: #FAFAFC;
 }
 
 .menu-icon img{
@@ -293,6 +293,10 @@ a:hover {
     margin-bottom: 5rem;
 }
 
+.projectpagetitle {
+    margin-left: 3.7rem;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -338,6 +342,16 @@ a:hover {
     color: black;
 }
 
+.project a {
+    color: black;
+}
+
 a:hover {
     color: #d7d3bf;
+}
+
+.researchVid {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
