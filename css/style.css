@@ -26,7 +26,12 @@ nav {
     background: transparent;
 }
 
-.logo {
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:hover {
     color: black;
 }
 
@@ -354,4 +359,34 @@ a:hover {
     width: 100%;
     max-width: 400px;
     height: auto;
+}
+
+/* about */
+
+.mypic img {
+    width: 250px;
+    height: 300;
+    border-radius: 10%;
+}
+
+.aboutpage .sec1 {
+    align-items: right;
+    margin-left: 80px !important;
+}
+
+.aboutpage .sec2 {
+    margin-left: -40px !important;
+}
+
+.aboutpage .sec2 .aboutsec{
+    margin-left: 80px;
+}
+
+.aboutpage .sec2 .aboutsec p{
+    margin-left: 20px;
+}
+
+.aboutpage .sec2 .aboutsec ul{
+    margin-left: 40px;
+    margin-right: 80px;
 }
