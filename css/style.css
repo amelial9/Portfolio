@@ -147,6 +147,12 @@ nav ul li a {
         width: 2px !important;
     }
 
+    /* about */
+    .aboutpage .sec1 {
+        align-items: right;
+        margin-left: 80px !important;
+    }    
+
 }
 
 
@@ -367,11 +373,6 @@ a:hover {
     width: 250px;
     height: 300;
     border-radius: 10%;
-}
-
-.aboutpage .sec1 {
-    align-items: right;
-    margin-left: 80px !important;
 }
 
 .aboutpage .sec2 {
