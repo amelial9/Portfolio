@@ -334,13 +334,19 @@ a:hover {
 .projectlinks {
     display: flex;
     flex-direction: row;
-    gap: 9px;
+    gap: 15px;
     margin-top: 5px;
 }
 
 .projectlink img {
     width: 35px;
     height: 35px;
+}
+
+.projectlink ion-icon {
+    width: 33px;
+    height: 33px;
+    padding-top: 1px;
 }
 
 .projectlink p {
